@@ -11,7 +11,7 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -28,12 +28,15 @@ nav {
 
 nav a {
     color: white;
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
 nav a:hover {
     text-decoration: underline;
+    color: #ff9800; /* Adds a highlight color when hovering */
 }
 
 /* Section styling */
@@ -41,8 +44,8 @@ section {
     padding: 20px;
     margin: 20px;
     background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer styling */
@@ -51,16 +54,17 @@ footer {
     padding: 10px;
     background-color: #333;
     color: white;
-    position: fixed;
-    bottom: 0;
+       bottom: 0;
     width: 100%;
 }
 
 /* Image styling */
 .band-photo {
-    width: 30%;
-    max-width: 50px;
+    width: 100%; /* Responsive image width */
+    max-width: 300px; /* Restrict maximum image size */
     display: block;
-    margin: 8px auto;
-    border-radius: 5px;
+    margin: 20px auto; /* Centers the image */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
